@@ -56,7 +56,10 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(247, 196, 76);
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(112, 87, 3, 0.75);
+    transition: box-shadow 0.3s ease;
+    transform: translateY(-5px);
 }
 
 #courses {
