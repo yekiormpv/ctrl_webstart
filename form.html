@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT mācību centrs">
+    <title>IT mācību centrs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><h1 id="the_title">IT mācību centrs</h1>
+        <nav>
+            <a href="#the_title"> Sākums</a>
+            <a href="#courses">Kursi</a>
+            <a href="#students">Mūsu studenti</a>
+            <a href="#about"> Par mums</a>
+            <a href="#contacts">Kontakti</a>
+        </nav>
+    </header>
+    <main>
+    <form>
+    <label for="name">Vārds:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Ievadi savu vārdu"
+        required
+    >
+    <br>
+    <label for="email">E-pasts:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="piemers@epasts.lv"
+        required
+    >
+    <br>
+    <label for="phone">Tālrunis:</label>
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+371 20000000"
+        required
+    >
+    <br>
+    <label for="course">Kurss:</label>
+    <select id="course" name="course" required>
+        <option value="">Izvēlies kursu</option>
+        <option value="frontend-master">Frontend master</option>
+        <option value="backend-master">Backend master</option>
+        <option value="data-science">Data Science for dummies</option>
+        <option value="java-part-1">Java: part 1</option>
+        <option value="java-part-2">Java: part 2</option>
+        <option value="cpp">C++</option>
+    </select>
+    <br>
+    <label for="learning-type">Mācību veids:</label>
+    <select id="learning-type" name="learning-type" required>
+        <option value="">Izvēlies mācību veidu</option>
+        <option value="online">Tiešsaistē</option>
+        <option value="onsite">Klātbūtienē</option>
+    </select>
+    <br>
+    <label for="comment">Komentārs:</label>
+    <textarea
+        id="comment"
+        name="comment"
+        placeholder="Ieraksti savu komentāru..."
+        rows="5"
+    ></textarea>
+    <br>
+    <label>
+        <input
+            type="checkbox"
+            name="agreement"
+            value="accepted"
+            required
+        >
+        Piekrītu, ka mani dati tiek izmantoti pieteikuma apstrādei.
+    </label>
+    <br>
+    <button type="submit">Nosūtīt pieteikumu</button>
+</form>
+</main>
+    <footer>
+    <section id="contacts">
+        <h2>CONTACTS</h2>
+        <address></address>
+    </section>
+    </footer>
+</body>
+</html>
